@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="imagens/pardim.png" alt="Logo" class="logo">
+        <div id="account"></div>
+    </div>
+    <button id="connectButton">Conectar com MetaMask</button>
+    <button id="extraButton1" class="hidden">Ingresse numa votação</button>
+    <button id="extraButton2" class="hidden">Crie uma votação</button>
+    <button id="extraButton3" class="hidden">Consultar ID</button>
+
+    <div id="votingIdSection" class="hidden">
+        <h2>Digite o ID da votação que deseja ingressar</h2>
+        <div class="input-group">
+            <input type="text" id="votingIdInput" placeholder="ID da Votação">
+            <button id="searchButton">Buscar</button>
+        </div>
+        <div id="resultMessage"></div>
+    </div>
+
+    <div id="createVotingSection" class="hidden">
+        <h2>Crie uma Nova Votação</h2>
+        <div class="input-group">
+            <label for="votingDescription">Descrição da Votação:</label>
+            <input type="text" id="votingDescription" placeholder="Digite a descrição da votação">
+        </div>
+        <div class="input-group">
+            <label for="votingAddresses">Endereços dos Participantes (separados por vírgula):</label>
+            <textarea id="votingAddresses" placeholder="Digite os endereços das carteiras"></textarea>
+        </div>
+        <button id="finalizeButton">Finalizar</button>
+        <div id="creationResult"></div>
+    </div>
+
+    <div id="consultIdSection" class="hidden">
+        <h2>Consultar Votação</h2>
+        <div class="input-group">
+            <input type="text" id="consultIdInput" placeholder="ID da Votação">
+            <button id="consultButton">Consultar</button>
+        </div>
+        <div id="consultResult"></div>
+    </div>
+
+    <script src="ids.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

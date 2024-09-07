@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4B0082;
+    /* Cor de fundo roxo */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+.logo {
+    width: 500px;
+    /* Reduz o tamanho da imagem do logo */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    margin-top: -300px;
+    margin-bottom: 60px;
+    margin-left: 220px;
+}
+
+
+
+#account {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+button {
+    background-color: #FF4500;
+    /* Cor laranja */
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    /* Aumentar tamanho do botão */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    /* Aumentar tamanho da fonte */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    /* Bordas mais arredondadas */
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-right: 200px;
+    margin-left: 10px;
+    margin-top: -800px;
+}
+
+button:hover {
+    background-color: #FF6347;
+    /* Tom de laranja mais claro ao passar o mouse */
+}.hidden {
+    display: none;
+}
+
+#votingIdSection {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+#votingIdSection h2 {
+    font-size: 40px; /* Aumenta o tamanho do texto */
+    margin-bottom: 20px;
+}
+
+#votingIdInput {
+    width: 400px;
+    height: auto; /* Aumenta a largura da caixa de texto */
+    padding: 10px; /* Aumenta o espaço interno */
+    font-size: 18px; /* Aumenta o tamanho da fonte dentro da caixa */
+    border-radius: 8px; /* Adiciona cantos arredondados */
+    border: 1px solid #ccc; /* Cor da borda */
+    margin-top: 10px;
+}
+#resultMessage {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#votingIdSection, #createVotingSection {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.input-group {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#votingDescription, #votingAddresses {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+#finalizeButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#finalizeButton:hover {
+    background-color: #FF6347;
+}
+
+#creationResult {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
